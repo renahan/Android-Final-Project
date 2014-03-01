@@ -75,4 +75,33 @@
         android:layout_marginTop="44dp"
         android:ems="10" />
 
+    <RadioGroup
+        android:id="@+id/tourType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/muralTitleHeader"
+        android:layout_alignRight="@+id/muralInformation"
+        android:layout_below="@+id/muralInformation"
+        android:layout_centerHorizontal="true" >
+
+        <RadioButton
+            android:id="@+id/tourTypeBike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/tourTypeBike" />
+
+        <RadioButton
+            android:id="@+id/tourTypeDrive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tourTypeDrive2" />
+
+        <RadioButton
+            android:id="@+id/tourTypeWalk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tourTypeWalk" />
+    </RadioGroup>
+
 </RelativeLayout>
