@@ -6,11 +6,102 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".TourNeighborhoodSelectionActivity" >
+    tools:context=".MuralInformationActivity" >
 
-    <TextView
+    <ImageView
+        android:id="@+id/muralImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher" />
+
+    <EditText
+        android:id="@+id/muralTitleHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/muralImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:text="@string/blankString" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/mileValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/timeValue"
+        android:layout_alignBottom="@+id/timeValue"
+        android:layout_toRightOf="@+id/muralImageView"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/pipeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mileValue"
+        android:layout_alignLeft="@+id/muralImageView"
+        android:text="@string/pipeView" />
+
+    <Button
+        android:id="@+id/startTour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:text="@string/startTour" />
+
+    <EditText
+        android:id="@+id/muralInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/timeValue"
+        android:layout_alignRight="@+id/mileValue"
+        android:layout_below="@+id/timeValue"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/timeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/pipeView"
+        android:layout_below="@+id/muralTitleHeader"
+        android:layout_marginTop="44dp"
+        android:ems="10" />
+
+    <RadioGroup
+        android:id="@+id/tourType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/muralTitleHeader"
+        android:layout_alignRight="@+id/muralInformation"
+        android:layout_below="@+id/muralInformation"
+        android:layout_centerHorizontal="true" >
+
+        <RadioButton
+            android:id="@+id/tourTypeBike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/tourTypeBike" />
+
+        <RadioButton
+            android:id="@+id/tourTypeDrive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tourTypeDrive2" />
+
+        <RadioButton
+            android:id="@+id/tourTypeWalk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tourTypeWalk" />
+    </RadioGroup>
 
 </RelativeLayout>
