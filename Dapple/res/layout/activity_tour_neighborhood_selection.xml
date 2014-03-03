@@ -2,48 +2,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MuralInformationActivity" >
 
+    <ImageButton
+        android:id="@+id/btn_menu"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:contentDescription="@string/btn_lbl_menuButton"
+        android:src="@drawable/dapple_menu_icon" />
+
     <ImageView
-        android:id="@+id/muralImageView"
+        android:id="@+id/img_dapple_logo"
+        android:layout_width="256dp"
+        android:layout_height="52dp"
+        android:layout_toRightOf="@+id/btn_menu"
+        android:contentDescription="@string/btn_lbl_dapple_logo"
+        android:src="@drawable/dapple_menu_logo" />
+
+    <HorizontalScrollView
+        android:id="@+id/hsv_tourSelector"
+        android:layout_below="@+id/btn_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/ic_launcher" />
+        android:layout_marginTop="16dp" >
 
-    <EditText
-        android:id="@+id/muralTitleHeader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/muralImageView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp"
-        android:ems="10"
-        android:text="@string/blankString" >
+        <LinearLayout
+            android:id="@+id/ll_hsv_images"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
 
-        <requestFocus />
-    </EditText>
+            <ImageView
+                android:id="@+id/img_tour_otr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:contentDescription="@string/txt_otrTour"
+                android:src="@drawable/tour_photo_otr" />
 
-    <EditText
+            <ImageView
+                android:id="@+id/img_tour_downtown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/txt_downtownTour"
+                android:src="@drawable/tour_photo_downtown" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
         android:id="@+id/mileValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/timeValue"
         android:layout_alignBottom="@+id/timeValue"
-        android:layout_toRightOf="@+id/muralImageView"
-        android:ems="10" />
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:text="@string/lbl_mileValue" />
 
     <TextView
         android:id="@+id/pipeView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/mileValue"
-        android:layout_alignLeft="@+id/muralImageView"
+        android:layout_centerHorizontal="true"
         android:text="@string/pipeView" />
 
     <Button
@@ -51,39 +72,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:layout_marginBottom="34dp"
+        android:background="@color/dRed"
         android:onClick="onStartTourClicked"
-        android:text="@string/startTour" />
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="@string/startTour"
+        android:textColor="@color/dWhite"
+        android:textColorHint="@color/dBlue"
+        android:textColorLink="@color/dBlue" />
 
-    <EditText
-        android:id="@+id/muralInformation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/timeValue"
-        android:layout_alignRight="@+id/mileValue"
-        android:layout_below="@+id/timeValue"
-        android:layout_marginTop="27dp"
-        android:ems="10"
-        android:inputType="textMultiLine" />
-
-    <EditText
+    <TextView
         android:id="@+id/timeValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/pipeView"
         android:layout_below="@+id/muralTitleHeader"
         android:layout_marginTop="44dp"
-        android:ems="10" />
+        android:ems="10"
+        android:text="@string/lbl_timeValue" />
 
     <RadioGroup
         android:id="@+id/tourType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/muralTitleHeader"
-        android:layout_alignRight="@+id/muralInformation"
-        android:layout_below="@+id/muralInformation"
-        android:layout_centerHorizontal="true" >
+        android:layout_above="@+id/startTour"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
 
         <RadioButton
             android:id="@+id/tourTypeBike"
@@ -104,5 +121,37 @@
             android:layout_height="wrap_content"
             android:text="@string/tourTypeWalk" />
     </RadioGroup>
+
+    <TextView
+        android:id="@+id/muralTitleHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/hsv_tourSelector"
+        android:ems="10"
+        android:text="@string/lbl_muralTitleHeader" />
+
+    <TextView
+        android:id="@+id/muralNumberValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeValue"
+        android:layout_marginTop="33dp"
+        android:layout_toLeftOf="@+id/tourType"
+        android:text="@string/lbl_muralNumberValue" />
+
+    <TextView
+        android:id="@+id/muralInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tourType"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/muralNumberValue"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="@string/lbl_muralInformation" />
 
 </RelativeLayout>

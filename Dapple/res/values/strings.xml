@@ -12,5 +12,14 @@
     <string name="tourTypeDrive"></string>
     <string name="tourTypeDrive2">Drive</string>
     <string name="tourTypeWalk">Walk</string>
+    <string name="lbl_muralNumberValue">Mural Number Value</string>
+    <string name="lbl_mileValue">Mile value</string>
+    <string name="lbl_timeValue">Time Value</string>
+    <string name="lbl_muralTitleHeader">Mural Title Header</string>
+    <string name="lbl_muralInformation">Mural Information</string>
+    <string name="btn_lbl_menuButton">Menu Button</string>
+    <string name="btn_lbl_dapple_logo">Dapple Logo</string>
+    <string name="txt_otrTour">OTR Tour</string>
+    <string name="txt_downtownTour">Downtown Tour</string>
 
 </resources>

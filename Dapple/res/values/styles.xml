@@ -16,5 +16,12 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    <!-- These are the colors to be used for design elements & text. Added prefix "d" so as not to conflict with any possible built-in values -->
+    <color name="dWhite">#F8F8F8</color>
+    <color name="dGreen">#62A9AB</color>
+    <color name="dBlue">#223154</color>
+    <color name="dLimeGreen">#91B74F</color>
+    <color name="dOrange">#DBB565</color>
+    <color name="dRed">#B9373B</color>
 
 </resources>
