@@ -11,6 +11,7 @@ import android.view.View;
 public class TourNeighborhoodSelectionActivity extends Activity {
 
 	private static final int MAP_RESULT = 10;
+	private LocationManager locationManager;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
