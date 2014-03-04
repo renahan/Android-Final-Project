@@ -23,5 +23,6 @@
     <color name="dLimeGreen">#91B74F</color>
     <color name="dOrange">#DBB565</color>
     <color name="dRed">#B9373B</color>
+    <color name="dGrey">#565656</color>
 
 </resources>

@@ -2,10 +2,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/dWhite"
     tools:context=".MuralInformationActivity" >
+
+    <ImageView
+        android:id="@+id/img_muralInfoDappleLogo"
+        android:layout_width="256dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/btn_lbl_dapple_logo"
+        android:fadingEdge="horizontal"
+        android:src="@drawable/dapple_menu_logo" />
+
+    <Button
+        android:id="@+id/btn_muralInfoContinueTour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:background="@color/dRed"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="@string/btn_lbl_continueTour"
+        android:textColor="@color/dWhite"
+        android:textColorHint="@color/dBlue"
+        android:textColorLink="@color/dBlue" />
+
+    <TextView
+        android:id="@+id/txt_muralInfoParagraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_muralInfoContinueTour"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txt_muralInfoArtist"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text="@string/lbl_muralInfoParagraph"
+        android:textColor="@color/dGrey" />
+
+    <TextView
+        android:id="@+id/txt_muralInfoArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/img_muralInfoDappleLogo"
+        android:layout_marginTop="42dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="@string/lbl_muralInfoArtist"
+        android:textColor="@color/dGrey" />
+
+    <TextView
+        android:id="@+id/txt_muralInfoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/img_muralInfoDappleLogo"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="@string/lbl_muralTitleHeader"
+        android:textColor="@color/dGrey"
+        android:textSize="14pt" />
 
 </RelativeLayout>

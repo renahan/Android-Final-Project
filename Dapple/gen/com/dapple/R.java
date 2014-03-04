@@ -13,6 +13,7 @@ public final class R {
     public static final class color {
         public static final int dBlue=0x7f070002;
         public static final int dGreen=0x7f070001;
+        public static final int dGrey=0x7f070006;
         public static final int dLimeGreen=0x7f070003;
         public static final int dOrange=0x7f070004;
         public static final int dRed=0x7f070005;
@@ -39,24 +40,28 @@ public final class R {
         public static final int tour_photo_otr=0x7f020005;
     }
     public static final class id {
-        public static final int action_settings=0x7f090011;
-        public static final int btn_menu=0x7f090000;
-        public static final int hsv_tourSelector=0x7f090002;
-        public static final int img_dapple_logo=0x7f090001;
-        public static final int img_tour_downtown=0x7f090005;
-        public static final int img_tour_otr=0x7f090004;
-        public static final int ll_hsv_images=0x7f090003;
-        public static final int mileValue=0x7f090006;
-        public static final int muralInformation=0x7f090010;
-        public static final int muralNumberValue=0x7f09000f;
-        public static final int muralTitleHeader=0x7f09000a;
-        public static final int pipeView=0x7f090008;
-        public static final int startTour=0x7f090009;
-        public static final int timeValue=0x7f090007;
-        public static final int tourType=0x7f09000b;
-        public static final int tourTypeBike=0x7f09000c;
-        public static final int tourTypeDrive=0x7f09000d;
-        public static final int tourTypeWalk=0x7f09000e;
+        public static final int action_settings=0x7f090015;
+        public static final int btn_menu=0x7f090005;
+        public static final int btn_muralInfoContinueTour=0x7f090001;
+        public static final int hsv_tourSelector=0x7f090007;
+        public static final int img_dapple_logo=0x7f090006;
+        public static final int img_muralInfoDappleLogo=0x7f090000;
+        public static final int img_tour_downtown=0x7f09000a;
+        public static final int img_tour_otr=0x7f090009;
+        public static final int ll_hsv_images=0x7f090008;
+        public static final int mileValue=0x7f090013;
+        public static final int muralInformation=0x7f09000e;
+        public static final int muralNumberValue=0x7f09000d;
+        public static final int muralTitleHeader=0x7f09000c;
+        public static final int startTour=0x7f09000b;
+        public static final int timeValue=0x7f090014;
+        public static final int tourType=0x7f09000f;
+        public static final int tourTypeBike=0x7f090010;
+        public static final int tourTypeDrive=0x7f090011;
+        public static final int tourTypeWalk=0x7f090012;
+        public static final int txt_muralInfoArtist=0x7f090003;
+        public static final int txt_muralInfoParagraph=0x7f090002;
+        public static final int txt_muralInfoTitle=0x7f090004;
     }
     public static final class layout {
         public static final int activity_mural_information=0x7f030000;
@@ -70,10 +75,13 @@ public final class R {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int blankString=0x7f050004;
+        public static final int btn_lbl_continueTour=0x7f050016;
         public static final int btn_lbl_dapple_logo=0x7f050011;
         public static final int btn_lbl_menuButton=0x7f050010;
         public static final int hello_world=0x7f050002;
         public static final int lbl_mileValue=0x7f05000c;
+        public static final int lbl_muralInfoArtist=0x7f050014;
+        public static final int lbl_muralInfoParagraph=0x7f050015;
         public static final int lbl_muralInformation=0x7f05000f;
         public static final int lbl_muralNumberValue=0x7f05000b;
         public static final int lbl_muralTitleHeader=0x7f05000e;

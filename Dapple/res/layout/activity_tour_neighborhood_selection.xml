@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/dWhite"
     tools:context=".MuralInformationActivity" >
 
     <ImageButton
@@ -15,16 +16,16 @@
         android:id="@+id/img_dapple_logo"
         android:layout_width="256dp"
         android:layout_height="52dp"
+        android:layout_alignParentRight="true"
         android:layout_toRightOf="@+id/btn_menu"
         android:contentDescription="@string/btn_lbl_dapple_logo"
         android:src="@drawable/dapple_menu_logo" />
 
     <HorizontalScrollView
         android:id="@+id/hsv_tourSelector"
-        android:layout_below="@+id/btn_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp" >
+        android:layout_below="@+id/btn_menu" >
 
         <LinearLayout
             android:id="@+id/ll_hsv_images"
@@ -49,23 +50,7 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <TextView
-        android:id="@+id/mileValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/timeValue"
-        android:layout_alignBottom="@+id/timeValue"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:text="@string/lbl_mileValue" />
-
-    <TextView
-        android:id="@+id/pipeView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/mileValue"
-        android:layout_centerHorizontal="true"
-        android:text="@string/pipeView" />
+   
 
     <Button
         android:id="@+id/startTour"
@@ -85,14 +70,42 @@
         android:textColorLink="@color/dBlue" />
 
     <TextView
-        android:id="@+id/timeValue"
+        android:id="@+id/muralTitleHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/pipeView"
-        android:layout_below="@+id/muralTitleHeader"
-        android:layout_marginTop="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/hsv_tourSelector"
         android:ems="10"
-        android:text="@string/lbl_timeValue" />
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="@string/lbl_muralTitleHeader"
+        android:textColor="@color/dGrey"
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/muralNumberValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/muralTitleHeader"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="@string/lbl_muralNumberValue"
+        android:textColor="@color/dGrey" />
+
+    <TextView
+        android:id="@+id/muralInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tourType"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/muralNumberValue"
+        android:ems="10"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="@string/lbl_muralInformation"
+        android:textColor="@color/dGrey" />
 
     <RadioGroup
         android:id="@+id/tourType"
@@ -123,35 +136,24 @@
     </RadioGroup>
 
     <TextView
-        android:id="@+id/muralTitleHeader"
+        android:id="@+id/mileValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/hsv_tourSelector"
+        android:layout_above="@+id/muralInformation"
+        android:layout_alignLeft="@+id/tourType"
+        android:layout_toLeftOf="@+id/timeValue"
         android:ems="10"
-        android:text="@string/lbl_muralTitleHeader" />
+        android:text="@string/lbl_mileValue"
+        android:textColor="@color/dGrey" />
 
     <TextView
-        android:id="@+id/muralNumberValue"
+        android:id="@+id/timeValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/timeValue"
-        android:layout_marginTop="33dp"
-        android:layout_toLeftOf="@+id/tourType"
-        android:text="@string/lbl_muralNumberValue" />
-
-    <TextView
-        android:id="@+id/muralInformation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/tourType"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/muralNumberValue"
-        android:layout_marginTop="41dp"
+        android:layout_below="@+id/muralTitleHeader"
         android:ems="10"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:text="@string/lbl_muralInformation" />
+        android:text="@string/lbl_timeValue"
+        android:textColor="@color/dGrey" />
 
 </RelativeLayout>

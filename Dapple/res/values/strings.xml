@@ -12,7 +12,7 @@
     <string name="tourTypeDrive"></string>
     <string name="tourTypeDrive2">Drive</string>
     <string name="tourTypeWalk">Walk</string>
-    <string name="lbl_muralNumberValue">Mural Number Value</string>
+    <string name="lbl_muralNumberValue">Murals</string>
     <string name="lbl_mileValue">Mile value</string>
     <string name="lbl_timeValue">Time Value</string>
     <string name="lbl_muralTitleHeader">Mural Title Header</string>
@@ -21,5 +21,8 @@
     <string name="btn_lbl_dapple_logo">Dapple Logo</string>
     <string name="txt_otrTour">OTR Tour</string>
     <string name="txt_downtownTour">Downtown Tour</string>
+    <string name="lbl_muralInfoArtist">Mural Artist</string>
+    <string name="lbl_muralInfoParagraph">Painted by Higher Level Art as a part of Cincy Fringe Festival 2013. Each Year Know Theatre paints a new mural on the north and south side of their building for this festival. The festival is a 17-day celebration of art outside of the box.</string>
+    <string name="btn_lbl_continueTour">Continue Tour</string>
 
 </resources>
