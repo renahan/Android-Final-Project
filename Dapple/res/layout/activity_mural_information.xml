@@ -45,18 +45,6 @@
         android:textColor="@color/dGrey" />
 
     <TextView
-        android:id="@+id/txt_muralInfoArtist"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/img_muralInfoDappleLogo"
-        android:layout_marginTop="42dp"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:text="@string/lbl_muralInfoArtist"
-        android:textColor="@color/dGrey" />
-
-    <TextView
         android:id="@+id/txt_muralInfoTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -67,5 +55,16 @@
         android:text="@string/lbl_muralTitleHeader"
         android:textColor="@color/dGrey"
         android:textSize="14pt" />
+
+    <TextView
+        android:id="@+id/txt_muralInfoArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txt_muralInfoTitle"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="@string/lbl_muralInfoArtist"
+        android:textColor="@color/dGrey" />
 
 </RelativeLayout>

@@ -31,6 +31,7 @@
             android:id="@+id/ll_hsv_images"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:onClick="onTourImageSwipe"
             android:orientation="horizontal" >
 
             <ImageView
@@ -102,6 +103,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/muralNumberValue"
         android:ems="10"
+        android:gravity="left|center_vertical"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:text="@string/lbl_muralInformation"
@@ -141,8 +143,8 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/muralInformation"
         android:layout_alignLeft="@+id/tourType"
-        android:layout_toLeftOf="@+id/timeValue"
         android:ems="10"
+        android:gravity="center"
         android:text="@string/lbl_mileValue"
         android:textColor="@color/dGrey" />
 
@@ -150,10 +152,19 @@
         android:id="@+id/timeValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/muralTitleHeader"
+        android:layout_above="@+id/muralInformation"
+        android:layout_toRightOf="@+id/mileValue"
         android:ems="10"
         android:text="@string/lbl_timeValue"
         android:textColor="@color/dGrey" />
+
+    <TextView
+        android:id="@+id/currentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/muralInformation"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:text="Getting Current Coordinates" />
 
 </RelativeLayout>
