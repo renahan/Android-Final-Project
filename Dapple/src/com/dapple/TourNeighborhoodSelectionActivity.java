@@ -78,7 +78,7 @@ public class TourNeighborhoodSelectionActivity extends Activity implements Locat
 
 	public void onStartTourClicked(View v)
 	{
-		//Convert coordinates from double to string
+		//Convert current coordinates from double to string
 		String source_lat = String.valueOf(currentLatitude);
 		String source_longi = String.valueOf(currentLongitude);
 		
@@ -96,11 +96,6 @@ public class TourNeighborhoodSelectionActivity extends Activity implements Locat
 		startActivityForResult(startMap, MAP_RESULT);
 	
 	}
-	
-//	public void onTourImageSwipe()
-//	{
-//		
-//	}
 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -146,7 +141,6 @@ public class TourNeighborhoodSelectionActivity extends Activity implements Locat
 
 		// subscribe to location service.
 		requestLocationUpdates();
-		//Toast.makeText(this, "Latitude: " + currentLatitude + '\n' + "currentLongitude: " + currentLongitude, Toast.LENGTH_LONG).show();
 	}
 
 	@Override

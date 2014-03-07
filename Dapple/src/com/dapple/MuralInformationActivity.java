@@ -25,7 +25,7 @@ public class MuralInformationActivity extends Activity {
 		//Get the selected tour value from previous activity
 		getTourSelection();
 		
-		//Pull the mural data from database (database not implemented yet)
+		//Pull the mural data from database or JSON
 		getMuralData();
 	}
 
@@ -35,7 +35,8 @@ public class MuralInformationActivity extends Activity {
 		getMenuInflater().inflate(R.menu.mural_information, menu);
 		return true;
 	}
-
+	
+	//gets the value for the selected tour which was passed from the previous activity
 	private void getTourSelection() {
 		// TODO Auto-generated method stub
 		
@@ -43,6 +44,7 @@ public class MuralInformationActivity extends Activity {
 		
 	}
 
+	//Will pull data from database or JSON to populate M=muralInformationActivity widgets
 	private void getMuralData() {
 		// TODO Auto-generated method stub
 		
